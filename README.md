@@ -1,47 +1,21 @@
-<div align="center">
+# Quantum Circuit Error Classification
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=250&section=header&text=Quantum%20Circuit%20Error%20Classification&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" />
-
-<br>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=900&lines=Quantum+Computing+%2B+Machine+Learning;Quantum+Circuit+Error+Classification;AI-Powered+Quantum+Diagnostics;Fault-Tolerant+Computing+Research" />
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3.10+-111111?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Scikit--Learn-ML-111111?style=flat-square&logo=scikitlearn&logoColor=white" />
+  <img src="https://img.shields.io/badge/Qiskit-Quantum-111111?style=flat-square&logo=qiskit&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-111111?style=flat-square" />
 </p>
 
-<br>
-
-<p align="center">
-  <a href="https://github.com/edwingeorgeshaji">
-    <img src="https://img.shields.io/badge/GitHub-edwingeorgeshaji-181717?style=for-the-badge&logo=github" />
-  </a>
-  <a href="https://www.linkedin.com/in/edwingeorgeshaji">
-    <img src="https://img.shields.io/badge/LinkedIn-Edwin%20George%20Shaji-0A66C2?style=for-the-badge&logo=linkedin" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=edwingeorgeshaji&style=for-the-badge&color=0e75b6" />
-</p>
-
-<br>
-
-<img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python" />
-<img src="https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?style=for-the-badge&logo=scikitlearn" />
-<img src="https://img.shields.io/badge/Pandas-Data%20Analysis-black?style=for-the-badge&logo=pandas" />
-<img src="https://img.shields.io/badge/NumPy-Scientific%20Computing-blue?style=for-the-badge&logo=numpy" />
-<img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter" />
-<img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
-
-</div>
+A machine learning system for detecting and classifying quantum circuit errors using hardware-inspired quantum metrics and predictive modeling.
 
 ---
 
-# Quantum Circuit Error Classification
-
 ## Overview
 
-Quantum computers are highly sensitive to environmental noise, decoherence, gate imperfections, and measurement instability. Detecting and classifying these quantum errors efficiently is one of the core challenges in modern quantum computing research.
+Quantum computers are highly sensitive to decoherence, gate imperfections, and environmental noise. This project explores how classical machine learning can be used to classify quantum circuit errors through structured hardware-inspired datasets.
 
-This project combines Quantum Computing concepts with Machine Learning techniques to classify quantum circuit errors using hardware-inspired metrics and predictive models.
-
-The repository demonstrates a complete end-to-end machine learning workflow including:
+The repository demonstrates a complete machine learning workflow:
 
 * Exploratory Data Analysis
 * Data preprocessing
@@ -49,47 +23,59 @@ The repository demonstrates a complete end-to-end machine learning workflow incl
 * Model training
 * Hyperparameter optimization
 * Cross-validation
-* Model evaluation
-* Visualization and insights
+* Performance evaluation
 
 ---
 
-## Project Objective
+## Architecture
 
-The goal of this project is to build an intelligent system capable of predicting and classifying quantum circuit errors using supervised machine learning.
-
-The system analyzes features such as:
-
-| Quantum Parameter | Description                            |
-| ----------------- | -------------------------------------- |
-| Gate Fidelity     | Accuracy of quantum gate operations    |
-| Circuit Depth     | Complexity of the quantum circuit      |
-| T1 Coherence Time | Energy relaxation stability            |
-| T2 Coherence Time | Phase decoherence stability            |
-| Readout Error     | Probability of incorrect measurement   |
-| Noise Metrics     | Quantum hardware noise characteristics |
-
-This contributes toward:
-
-* Fault-tolerant quantum computing
-* Quantum hardware optimization
-* Noise-aware circuit execution
-* Intelligent quantum diagnostics
-* Quantum error mitigation research
+```mermaid
+flowchart LR
+    A[Quantum Circuit Dataset] --> B[Preprocessing]
+    B --> C[Feature Engineering]
+    C --> D[Model Training]
+    D --> E[Hyperparameter Tuning]
+    E --> F[Evaluation]
+    F --> G[Error Classification]
+```
 
 ---
 
-## User Interface Preview
+## Dataset Features
 
-<div align="center">
+| Feature       | Description                         |
+| ------------- | ----------------------------------- |
+| Gate Fidelity | Accuracy of quantum gate operations |
+| Circuit Depth | Complexity of the quantum circuit   |
+| T1 Coherence  | Energy relaxation time              |
+| T2 Coherence  | Phase decoherence time              |
+| Readout Error | Measurement instability             |
+| Error Type    | Target classification label         |
 
-<img width="90%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png">
+---
 
-</div>
+## Models Used
 
-<p align="center">
-  Premium README interface inspired by modern developer portfolio aesthetics and research-grade project presentation.
-</p>
+| Model                    | Purpose                     |
+| ------------------------ | --------------------------- |
+| Logistic Regression      | Baseline classification     |
+| Random Forest Classifier | Main predictive model       |
+| GridSearchCV             | Hyperparameter optimization |
+| K-Fold Cross Validation  | Model validation            |
+
+---
+
+## Tech Stack
+
+```text
+Python
+Scikit-learn
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Jupyter Notebook
+```
 
 ---
 
@@ -106,87 +92,9 @@ Quantum-Circuit-Error-Classification/
 
 ---
 
-## Machine Learning Pipeline
-
-<div align="center">
-
-```mermaid
-graph LR
-A[Quantum Dataset] --> B[Preprocessing]
-B --> C[Feature Engineering]
-C --> D[Model Training]
-D --> E[Hyperparameter Tuning]
-E --> F[Evaluation]
-F --> G[Prediction & Analysis]
-```
-
-</div>
-
----
-
-## Technologies Used
-
-<div align="center">
-
-| Category         | Technologies        |
-| ---------------- | ------------------- |
-| Programming      | Python              |
-| Machine Learning | Scikit-learn        |
-| Data Analysis    | Pandas, NumPy       |
-| Visualization    | Matplotlib, Seaborn |
-| Development      | Jupyter Notebook    |
-| Research Domain  | Quantum Computing   |
-
-</div>
-
----
-
-## Models Implemented
-
-| Model                    | Purpose                       |
-| ------------------------ | ----------------------------- |
-| Logistic Regression      | Baseline classification       |
-| Random Forest Classifier | Main predictive model         |
-| GridSearchCV             | Hyperparameter optimization   |
-| K-Fold Cross Validation  | Model generalization analysis |
-
----
-
-## Features
-
-### Data Analysis
-
-* Statistical summaries
-* Correlation analysis
-* Distribution visualization
-* Feature relationship analysis
-
-### Preprocessing
-
-* Missing value checks
-* Label encoding
-* Feature scaling
-* Data preparation pipeline
-
-### Visualization
-
-* Correlation heatmaps
-* Confusion matrix plots
-* Feature importance graphs
-* Cross-validation analysis
-
-### Prediction System
-
-* Quantum error classification
-* Model evaluation metrics
-* Performance analysis
-* Prediction on unseen data
-
----
-
 ## Installation
 
-### Clone the Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/edwingeorgeshaji/Quantum-Circuit-Error-Classification.git
@@ -199,105 +107,51 @@ cd Quantum-Circuit-Error-Classification
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 ```
 
-### Launch Notebook
+### Run Notebook
 
 ```bash
 jupyter notebook
 ```
 
-Open:
-
-```bash
-quantum-circuit-error-classification.ipynb
-```
-
 ---
 
-## Visualizations Included
+## Key Features
 
-The notebook contains:
-
-* Feature distribution plots
-* Correlation heatmaps
-* Confusion matrix visualizations
+* Quantum circuit error classification
+* Hardware-inspired feature analysis
+* Correlation heatmaps and visualizations
 * Feature importance analysis
-* Cross-validation performance metrics
+* Cross-validation evaluation
+* Hyperparameter optimization
 
 ---
 
-## Future Improvements
+## Future Scope
 
 * IBM Quantum hardware integration
-* Deep learning-based error prediction
 * Real-time quantum monitoring
-* Quantum circuit simulation support
-* Interactive dashboard deployment
-* Advanced ensemble learning models
-
----
-
-## Applications
-
-This project can contribute toward:
-
-* Quantum error correction research
-* Fault-tolerant quantum systems
-* AI-assisted quantum diagnostics
-* Quantum hardware analysis
-* Noise-aware quantum compilation
+* Deep learning-based classification
+* Interactive visualization dashboard
+* Advanced ensemble learning methods
 
 ---
 
 ## Author
 
-<div align="center">
+**Edwin George Shaji**
 
-<img src="https://github-profile-trophy.vercel.app/?username=edwingeorgeshaji&theme=algolia&no-frame=true&row=1&column=6" />
+Computer Science Engineering Student focused on Quantum Computing, Artificial Intelligence, and Machine Learning.
 
-### Edwin George Shaji
+GitHub:
 
-Computer Science Engineering Student
-Quantum Computing Enthusiast
-Machine Learning and AI Developer
+[https://github.com/edwingeorgeshaji](https://github.com/edwingeorgeshaji)
 
-<br>
+LinkedIn:
 
-<a href="https://github.com/edwingeorgeshaji">
-  <img src="https://img.shields.io/badge/GitHub-edwingeorgeshaji-181717?style=for-the-badge&logo=github" />
-</a>
-
-<a href="https://www.linkedin.com/in/edwingeorgeshaji">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" />
-</a>
-
-</div>
+[https://www.linkedin.com/in/edwingeorgeshaji](https://www.linkedin.com/in/edwingeorgeshaji)
 
 ---
 
-## Repository Analytics
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=edwingeorgeshaji&show_icons=true&theme=tokyonight&hide_border=true" />
-
-<img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=edwingeorgeshaji&theme=tokyonight&hide_border=true" />
-
-</div>
-
----
-
-## Support
-
-If you found this project useful:
-
-* Star the repository
-* Fork the project
-* Share it with other developers and researchers
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=120&section=footer" width="100%" />
-
-</div>
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=edwingeorgeshaji&show_icons=true&hide_border=true&title_color=111111&icon_color=111111&text_color=333333&bg_color=ffffff" height="160" />
+</p>
