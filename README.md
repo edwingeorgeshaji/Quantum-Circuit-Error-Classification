@@ -160,6 +160,7 @@ LinkedIn:
   <img src="https://github-readme-stats.vercel.app/api?username=edwingeorgeshaji&show_icons=true&hide_border=true&title_color=111111&icon_color=111111&text_color=333333&bg_color=ffffff" height="160" />
 </p>
 
+---
 
  <div align='center'>
   
