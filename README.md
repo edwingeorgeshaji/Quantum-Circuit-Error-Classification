@@ -142,6 +142,10 @@ jupyter notebook
 
 Computer Science Engineering Student focused on Quantum Computing, Artificial Intelligence, and Machine Learning.
 
+Portfolio:
+
+[https://edwingeorgeshaji,com](https://edwingeorgeshaji.com)
+
 GitHub:
 
 [https://github.com/edwingeorgeshaji](https://github.com/edwingeorgeshaji)
@@ -155,3 +159,9 @@ LinkedIn:
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=edwingeorgeshaji&show_icons=true&hide_border=true&title_color=111111&icon_color=111111&text_color=333333&bg_color=ffffff" height="160" />
 </p>
+
+
+ <div align='center'>
+  
+  Bulit by,<strong> [R.E.C](https://github.com/edwingeorgeshaji) </strong>  <i>(ifykyk).</i>
+ </div>
